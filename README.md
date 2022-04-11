@@ -56,7 +56,7 @@ The main components of the repository are:
 - `notebooks`: Contains Jupyter notebooks used to analyze data. All plotting and data analysis for the papers of the main repository is done in the subfolder `presentation`. `dev` contains development notebooks.
 - `saved_models`: Contains the saved models (weights, biases,..) of the VAE paper in respective subfolders. 
 - `wkspectra`: Contains code to compute Wheeler-Kiladis figures. These were created by [Mike S. Pritchard](http://sites.uci.edu/pritchard/)
-- `wk_spectrum`: Contains python code to compute Wheeler-Kiladis diagrams provided by [Shuguang Wang].  
+- `wk_spectrum`: Contains python code to compute Wheeler-Kiladis diagrams provided by Shuguang Wang.  
 - `wheeler-kiladis`: Contains W-K diagrams shown in the VAE paper. 
 - `save_weights.py`: Saves the weights, biases and normalization vectors in text files. These are then used as input for the climate model.
 
