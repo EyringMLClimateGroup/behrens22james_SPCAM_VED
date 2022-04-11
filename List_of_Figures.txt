@@ -1,0 +1,30 @@
+This list points to the script used for the presented Figures in the VAE paper.
+
+Main paper:
+
+Fig1: VAE schematic (no .py code needed)
+Fig2: Dependence of MSE scores vs. VAE latent space width with VAE output normalization --> VAE_clim_clim_conv_Network_performance_LS_width.ipynb
+Fig3: R² scores of VAE and reference ANN --> R_2_plots.ipynb
+Fig4: Wheeler Kiladis plot of VAE --> Wheeler_Kiladis_diagrams_1_SP_year_models.ipynb
+Fig5 (without arrows): Conditional averages in the 2D PCA compressed latent space of VAE --> VAE_clim_clim_conv_compilation_multi_var.ipynb
+
+Fig 6 - 10: Generated profiles with z$_{translation}$ for each latent node --> VAE_clim_clim_conv_z_translation.ipynb
+
+Fig 11: Marginal distribution plots in overview figure --> VAE_AED_clim_clim_conv_distributions.ipynb
+
+Supporting information:
+
+Fig S1: Dependence of MSE scores vs. VAE latent space width with Rasp output normalization --> VAE_clim_clim_conv_Network_performance_LS_width_Rasp_scaling.ipynb
+Fig S2: AE Wheeler Kiladis plot --> Wheeler_Kiladis_diagrams_1_SP_year_models.ipynb
+Fig S3: reference ANN Wheeler Kiladis plot --> Wheeler_Kiladis_diagrams_1_SP_year_models.ipynb
+Fig S4: SST forcing plot --> VAE_clim_clim_conv_compilation_multi_var.ipynb
+Fig S5: Joint distribution plot of 2D PCA compressed VAE vs. AE latent space --> VAE_AED_clim_clim_conv_distributions.ipynb
+Fig S6: Conditional averages of precipitation, OLR, shortwave radiation at the model top and surface air temperature in the 2D PCA compressed latent space of VAE for different geographic regions --> VAE_clim_clim_conv_compilation_multi_var.ipynb
+
+Fig S7:Conditional averages of precipitation, OLR, shortwave radiation at the model top and surface air temperature in the 2D PCA compressed latent space of AE for different geographic regions --> AED_clim_clim_conv_compilation_multi_var.ipynb
+
+Fig S8: schematic of VAE models (no .py code needed)
+Fig S9: Conditional averages of precipitation in the 2D PCA compressed latent space of VAE and VAE_X_Y --> VAE_clim_clim_conv_VAE_climate_convection_Surf_T.ipynb
+Fig S10: Conditional averages of surface air temperature in the 2D PCA compressed latent space of VAE and VAE_X_Y --> VAE_clim_clim_conv_VAE_climate_convection_Surf_T.ipynb
+Fig S11: Squared Pearson correlation R² plot between latent node and heating, moistening, specific humidity and temperature profiles space-time series --> VAE_clim_clim_conv_lin_corr_lat_space.ipynb
+Fig S12: Median Squared Pearson correlation R² plot between latent node and heating, moistening, specific humidity and temperature profiles time series --> VAE_clim_clim_conv_lin_corr_lat_space.ipynb
