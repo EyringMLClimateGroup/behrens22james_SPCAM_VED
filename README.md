@@ -49,6 +49,7 @@ To create the training data (regular SPCAM) the correct branch is `fluxbypass`. 
 The main components of the repository are:
 
 - `cbrain`: Contains the cbrain module with all code to preprocess the raw data, run the neural network experiments and analyze the data.
+- `environments`: Contains the .yml files of the conda environments used for this repository 
 - `pp_config`: Contains configuration files and shell scripts to preprocess the climate model data to be used as neural network inputs
 - `perf_analy`: Contains files for benchmarking the reproduction skills of evaluated models
 - `R_2_val`: Contains saved data sets for the computation of values of determination R² of all networks
