@@ -8,6 +8,12 @@ Main Repository Author: Stephan Rasp - <raspstephan@gmail.com> - https://raspste
 
 Thank you for checking out this fork of the CBRAIN repository (https://github.com/raspstephan/CBRAIN-CAM), dedicated to building VAEs for learning convective processes in SPCAM. This is a working repository, which means that the most current commit might not always be the most functional or documented. 
 
+The current release on zenodo can be found here: 
+
+[![DOI](https://zenodo.org/badge/227609774.svg)](https://zenodo.org/badge/latestdoi/227609774)
+
+
+
 
 If you are looking for the exact version of the code that corresponds to the PNAS paper, check out this release: https://github.com/raspstephan/CBRAIN-CAM/releases/tag/PNAS_final [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1402384.svg)](https://doi.org/10.5281/zenodo.1402384)
 
