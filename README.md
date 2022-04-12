@@ -60,5 +60,6 @@ The main components of the repository are:
 - `wk_spectrum`: Contains python code to compute Wheeler-Kiladis diagrams provided by Shuguang Wang.  
 - `wheeler-kiladis`: Contains W-K diagrams shown in the VAE paper. 
 - `save_weights.py`: Saves the weights, biases and normalization vectors in text files. These are then used as input for the climate model.
+- `List_of_Figures.txt`: Contains a description where to find the python code to reproduce the Figures of the VAE paper
 
 
