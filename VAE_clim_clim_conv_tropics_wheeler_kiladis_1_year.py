@@ -310,6 +310,7 @@ B_with_out,fft_freq_VAE_with_out=load_olr_and_highpass_filter(VAE_OLR_array_lat_
 
 
 from wk_spectrum.module_wk_diagram import dispersion_relation, calc_wk_diagram
+import wk_spectrum.nlcmap as nlcmap
 
 
 import numpy as np
@@ -663,7 +664,7 @@ plt.title(r'Q$_{lw \ top}$ VAE$_{clim \rightarrow clim + conv}$',Fontsize=20)
  
 plt.tight_layout()
 
-plt.savefig('wheeler_kiladis/VAE_clim_clim_conv_OLR_1_year_15NS_fixed_1_2.png')
+#plt.savefig('wheeler_kiladis/VAE_clim_clim_conv_OLR_1_year_15NS_fixed_1_2.png')
 
 # plot difference of WK diagrams VAE - SP
 plt.figure(5,(5,5))
@@ -685,7 +686,7 @@ a.set_clim([-0.5, 0.5])
 plt.colorbar(a,cax=bx)
  
 
-plt.savefig('wheeler_kiladis/VAE_clim_clim_conv_OLR_1_year_15NS_diff_fixed_1.png')
+#plt.savefig('wheeler_kiladis/VAE_clim_clim_conv_OLR_1_year_15NS_diff_fixed_1.png')
 
 #plot W-K diagrams for 1 year of SP OLR, VAE OLR and the respective difference VAE - SP 
 
@@ -762,7 +763,7 @@ cb_2.ax.tick_params(labelsize=16)
 
 
 
-plt.savefig('wheeler_kiladis/VAE_clim_clim_conv_OLR_1_year_15NS_diff_fixed_combo_1.png')
+#plt.savefig('wheeler_kiladis/VAE_clim_clim_conv_OLR_1_year_15NS_diff_fixed_combo_1.png')
 
 
 ## plot same figure like above but with modified figure captions 
@@ -835,9 +836,79 @@ cb_2.ax.tick_params(labelsize=16)
 
 
 
-plt.savefig('wheeler_kiladis/VAE_clim_clim_conv_OLR_1_year_15NS_diff_fixed_combo_2.png')
+#plt.savefig('wheeler_kiladis/VAE_clim_clim_conv_OLR_1_year_15NS_diff_fixed_combo_2.png')
+
+
+
+## plot same figure like above but with modified figure caption VAE --> VED 
+
+plt.figure(figsize=(20,6))
+plt.subplot(1,3,1)
+plt.contourf(x_wn_with_out, y_freq_with_out, pwrdiv_sym_with_out.T, levels=cn_int,  cmap=cmap_nonlin,  extend='both' )
+plt.xlim([-15, 15])
+plt.ylim([0, 0.5])
+#plt.colorbar()
+plt.contour(x_wn_with_out, y_freq_with_out, pwrdiv_sym_with_out.T, levels=cn_int,  colors='k', linewidths=0.2 )
+x0 = np.arange(0,0.51,0.05)
+plt.plot(x0*0, x0, '--', color='k', linewidth=0.7)
+#plt.xlabel('Wavenumber',Fontsize=20)
+plt.ylabel(r'$\omega$  $[\frac{1}{day}]$',Fontsize=24)
+plt.xticks(Fontsize=16)
+plt.yticks(Fontsize=16)
+
+plot_waves(lon, plt.gca())
+plt.text(-15, -0.06, 'Westward',Fontsize=20)
+plt.text(10, -0.06, 'Eastward',Fontsize=20)
+plt.title(r'a) Outgoing Longwave Rad. Q$_{lw \ top}$ SP',Fontsize=24)
+ 
+plt.tight_layout()
+
+
+plt.subplot(1,3,2)
+plt.contourf(x_wn_VAE_with_out, y_freq_VAE_with_out, pwrdiv_sym_VAE_with_out.T, levels=cn_int,  cmap=cmap_nonlin,  extend='both' )
+plt.xlim([-15, 15])
+plt.ylim([0, 0.5])
+cb_1=plt.colorbar()
+cb_1.ax.tick_params(labelsize=16)
+plt.contour(x_wn_VAE_with_out, y_freq_VAE_with_out, pwrdiv_sym_VAE_with_out.T, levels=cn_int,  colors='k', linewidths=0.2 )
+x0 = np.arange(0,0.51,0.05)
+plt.plot(x0*0, x0, '--', color='k', linewidth=0.7)
+plt.xlabel(r'k',Fontsize=24)
+plot_waves(lon, plt.gca())
+plt.xticks(Fontsize=16)
+plt.yticks(Fontsize=16)
+
+
+plt.title(r'b) Q$_{lw \ top}$ VED',Fontsize=24)
+ 
+plt.tight_layout()
+
+
+plt.subplot(1,3,3)
+plt.contourf(x_wn_VAE_with_out[x_wn_15_15], y_freq_VAE_with_out[y_freq_0_0_5],SP_VAE_disp_diff, levels=41, cmap=plt.cm.seismic,vmin=-0.5,vmax=0.5, extend='both')
+plt.xlim([-15, 15])
+plt.ylim([0, 0.5])
+x0 = np.arange(0,0.51,0.05)
+plt.plot(x0*0, x0, '--', color='k', linewidth=0.7)
+#plt.xlabel('Wavenumber',Fontsize=20)
+#plt.ylabel('Frequency (/day)',Fontsize=20)
+plot_waves(lon, plt.gca())
+plt.xticks(Fontsize=16)
+plt.yticks(Fontsize=16)
+
+plt.text(-15, -0.06, 'Westward',Fontsize=20)
+plt.text(10, -0.06, 'Eastward',Fontsize=20)
+plt.title(r'c) Q$_{lw \ top}$ VED - SP',Fontsize=24)
+bx, _ = mpl.colorbar.make_axes(plt.gca())
+a=mpl.cm.ScalarMappable(cmap=plt.cm.seismic, norm=mpl.colors.Normalize(vmin=-0.5, vmax=0.5))
+a.set_clim([-0.5, 0.5])                      
+cb_2=plt.colorbar(a,cax=bx)
+ 
+cb_2.ax.tick_params(labelsize=16)
 
 
 
 
+
+plt.savefig('wheeler_kiladis/VAE_clim_clim_conv_OLR_1_year_15NS_diff_fixed_combo_3.png')
 
