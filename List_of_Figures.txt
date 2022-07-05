@@ -23,8 +23,22 @@ Fig S6: Conditional averages of precipitation, OLR, shortwave radiation at the m
 
 Fig S7:Conditional averages of precipitation, OLR, shortwave radiation at the model top and surface air temperature in the 2D PCA compressed latent space of AE for different geographic regions --> AED_clim_clim_conv_compilation_multi_var.ipynb
 
-Fig S8: schematic of VAE models (no .py code needed)
-Fig S9: Conditional averages of precipitation in the 2D PCA compressed latent space of VAE and VAE_X_Y --> VAE_clim_clim_conv_VAE_climate_convection_Surf_T.ipynb
-Fig S10: Conditional averages of surface air temperature in the 2D PCA compressed latent space of VAE and VAE_X_Y --> VAE_clim_clim_conv_VAE_climate_convection_Surf_T.ipynb
-Fig S11: Squared Pearson correlation R² plot between latent node and heating, moistening, specific humidity and temperature profiles space-time series --> VAE_clim_clim_conv_lin_corr_lat_space.ipynb
-Fig S12: Median Squared Pearson correlation R² plot between latent node and heating, moistening, specific humidity and temperature profiles time series --> VAE_clim_clim_conv_lin_corr_lat_space.ipynb
+Fig S8: Conditional averages in the projection of the first two leading principal components of the large-scale climate variables --> PCA_revisions_plot.ipynb
+
+Fig S9: Snapshot of the two leading PC's and associated large-scale and subgrid-scale variables in a latitude-longtitude plot --> PCA_revisions_plot.ipynb
+
+Fig S10: Snapshot of the 5 latent variables and associated large-scale and subgrid-scale variables in a latitude-longtitude plot for the same time step as in S9 --> VAE_clim_clim_conv_revisions_plot_latent_vars_PC.ipynb
+
+Fig S11: Density plot of the projections of all latent variables of VAE --> VAE_clim_clim_conv_latent_space_density_plots.ipynb
+
+Fig S12: Conditional averages of precipitation in the 2D projections of all latent variables --> VAE_clim_clim_conv_revision_lat_space.ipynb
+
+Fig S13: Conditional averages of solar insolation in the 2D projections of all latent variables --> VAE_clim_clim_conv_revision_lat_space.ipynb
+
+Fig S14: Conditional averages of surface air temperature in the 2D projections of all latent variables --> VAE_clim_clim_conv_revision_lat_space.ipynb
+
+Fig S15: schematic of VAE models (no .py code needed)
+Fig S16: Conditional averages of precipitation in the 2D PCA compressed latent space of VAE and VAE_X_Y --> VAE_clim_clim_conv_VAE_climate_convection_Surf_T.ipynb
+Fig S17: Conditional averages of surface air temperature in the 2D PCA compressed latent space of VAE and VAE_X_Y --> VAE_clim_clim_conv_VAE_climate_convection_Surf_T.ipynb
+Fig S18: Squared Pearson correlation R² plot between latent node and heating, moistening, specific humidity and temperature profiles space-time series --> VAE_clim_clim_conv_lin_corr_lat_space.ipynb
+Fig S19: Median Squared Pearson correlation R² plot between latent node and heating, moistening, specific humidity and temperature profiles time series --> VAE_clim_clim_conv_lin_corr_lat_space.ipynb
