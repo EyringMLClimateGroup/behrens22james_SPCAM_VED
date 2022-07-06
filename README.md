@@ -6,7 +6,7 @@ Fork Author: Gunnar Behrens - <gunnar.behrens@dlr.de>
 
 Main Repository Author: Stephan Rasp - <raspstephan@gmail.com> - https://raspstephan.github.io
 
-Thank you for checking out this fork of the CBRAIN repository (https://github.com/raspstephan/CBRAIN-CAM), dedicated to building VAEs for learning convective processes in SPCAM. This is a working repository, which means that the most current commit might not always be the most functional or documented. 
+Thank you for checking out this fork of the CBRAIN repository (https://github.com/raspstephan/CBRAIN-CAM), dedicated to building VEDs and VAEs for learning convective processes in SPCAM. This is a working repository, which means that the most current commit might not always be the most functional or documented. 
 
 The current release on zenodo can be found here: 
 
@@ -26,7 +26,7 @@ To create the training data (regular SPCAM) the correct branch is `fluxbypass`. 
 ### Papers using this fork
 
 > G.Behrens, T. Beucler, P. Gentine, F. Iglesias-Suarez, M. Pritchard and V. Eyring, 2022.
-> Non-linear dimensionality reduction with a Variational Autoencoder Decoder
+> Non-linear dimensionality reduction with a Variational Encoder Decoder
 > to Understand Convective Processes in Climate Models
 
 
@@ -60,12 +60,13 @@ The main components of the repository are:
 - `perf_analy`: Contains files for benchmarking the reproduction skills of evaluated models
 - `R_2_val`: Contains saved data sets for the computation of values of determination R² of all networks
 - `nn_config`: Contains neural network configuration files to be used with `run_experiment.py`.
-- `notebooks`: Contains Jupyter notebooks used to analyze data. All plotting and data analysis for the papers of the main repository is done in the subfolder `presentation`. `dev` contains development notebooks.
+- `notebooks`: Contains Jupyter notebooks used to analyze data. All plotting and data analysis for the papers of the main repository is done in the subfolder 
+- `presentation`. `dev` contains development notebooks.
 - `saved_models`: Contains the saved models (weights, biases,..) of the VAE paper in respective subfolders. 
 - `wkspectra`: Contains code to compute Wheeler-Kiladis figures. These were created by [Mike S. Pritchard](http://sites.uci.edu/pritchard/)
 - `wk_spectrum`: Contains python code to compute Wheeler-Kiladis diagrams provided by Shuguang Wang.  
 - `wheeler-kiladis`: Contains W-K diagrams shown in the VAE paper. 
 - `save_weights.py`: Saves the weights, biases and normalization vectors in text files. These are then used as input for the climate model.
 - `List_of_Figures.txt`: Contains a description where to find the python code to reproduce the figures of the VAE paper
-
+- `License`: Contains the license information of this repository
 
