@@ -1,0 +1,29 @@
+README concerning the Wheeler Kiladis plots of the different networks 
+
+Date: 07/07/2022
+
+T I T L E O F T H E D A T A S E T
+- VAE_clim_clim_conv*.png
+- AED_clim_clim_conv*.png
+- LR_clim_clim_conv*.png
+- reference_ANN*.png
+
+
+
+P A T H T O T H E D A T A S E T
+- /home/b/b309162/CBRAIN_git_connect/wheeler_kiladis/
+
+O W N E R / P R O D U C E R O F T H E D A T A S E T 
+- Gunnar Behrens and Deutsches Zentrum fuer Luft- und Raumfahrt e. V., D-51170 Koeln
+
+D A T A U S A G E L I C E N S E 
+- See LICENSE File in this directory
+
+C O N T E N T O F T H E D A T A S E T
+- These .png files show the plots produced with the Wheeler-Kiladis analyis for all evaluated networks  
+
+D A T A U S A G E S C E N A R I O S
+- To reproduce Figure 4 of the aper
+
+M E T H O D S U S E D F O R D A T A C R E A T I O N
+- See 'Non-linear dimensionality reduction with a Variational Encoder Decoder to Understand Convective Processes in Climate Models' (Behrens et al., 2022)
