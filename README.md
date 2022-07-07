@@ -10,7 +10,9 @@ Thank you for checking out this fork of the CBRAIN repository (https://github.co
 
 The current release on zenodo can be found here: 
 
-[![DOI](https://zenodo.org/badge/227609774.svg)](https://zenodo.org/badge/latestdoi/227609774)
+
+[![DOI](https://zenodo.org/badge/511514344.svg)](https://zenodo.org/badge/latestdoi/511514344)
+
 
 
 
