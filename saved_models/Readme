@@ -1,0 +1,31 @@
+README concerning the folders which contains the weights and biases of the presented networks
+
+Date: 07/07/2022
+
+T I T L E O F T H E D A T A S E T
+- VAE_clim_clim_conv
+- AED_clim_clim_conv
+- VAE_climate_convection
+- cVAE_cond
+- LR_clim_clim_conv
+- reference_ANN
+- reference_ANN_linear
+
+
+P A T H T O T H E D A T A S E T
+- /home/b/b309162/CBRAIN_git_connect/saved_models/
+
+O W N E R / P R O D U C E R O F T H E D A T A S E T 
+- Gunnar Behrens and Deutsches Zentrum fuer Luft- und Raumfahrt e. V., D-51170 Koeln
+
+D A T A U S A G E L I C E N S E 
+- See LICENSE File in this directory
+
+C O N T E N T O F T H E D A T A S E T
+- These folder contain the weights and biases of the presented networks in the paper stored as .h5 and .tf files
+
+D A T A U S A G E S C E N A R I O S
+- To use the saved the weights and biases for the reproduction of the results of the paper
+
+M E T H O D S U S E D F O R D A T A C R E A T I O N
+- See 'Non-linear dimensionality reduction with a Variational Encoder Decoder to Understand Convective Processes in Climate Models' (Behrens et al., 2022)
